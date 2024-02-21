@@ -9,6 +9,9 @@ public class ClientsFormdbContext : DbContext
 
     public ClientsFormdbContext()
     {
+        // Якщо бази даних немає, то потрібно розкоментувати цей рядок
+        //Database.EnsureDeleted();
+
         Database.EnsureCreated();
     }
 
